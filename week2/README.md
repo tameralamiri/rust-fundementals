@@ -13,6 +13,8 @@ First Steps in Rust: https://learn.microsoft.com/en-us/training/paths/rust-first
 * Create your first rust program
 * Test Conditions with if/else expressions in Rust
 * Use Loops to iterate through data in Rust
+* Handle errors in Rust
+* Understand how Rust manages memory
 
 Use loops and HashMaps in Rust: https://learn.microsoft.com/en-us/training/modules/rust-loop-expressions/
 Arrays, Vectors and Test conditions with if/else expressions in Rust: https://learn.microsoft.com/en-us/training/modules/rust-if-else-expressions/?WT.mc_id=academic-0000-alfredodeza
