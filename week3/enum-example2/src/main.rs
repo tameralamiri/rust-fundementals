@@ -1,3 +1,5 @@
+use std::env;
+
 enum FileSize {
     Bytes(u64),
     Kilobytes(f64),
@@ -28,6 +30,12 @@ impl FileSize {
 
 
 fn main() {
-    let result = FileSize::format_size(2500);
+    let args = env::args().collect::<Vec<String>>();
+    if args.len() < 2 {
+        println!("Usage: {} <size in bytes>", args[0]);
+        return;
+    }
+    let size = args[1].parse::<u64>().unwrap();
+    let result = FileSize::format_size(size);
     println!("{}", result)
 }
